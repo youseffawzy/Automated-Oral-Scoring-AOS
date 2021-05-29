@@ -1,0 +1,131 @@
+.bo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url("background.jpg");
+  overflow: hidden;
+}
+.ca {
+  display: grid;
+  grid-template-columns: 412  px;
+  width: 100%;
+  grid-template-rows: 240px 240px 100px;
+  grid-template-areas: "text" "text" "stats";
+  border-radius: 18px;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  text-align: center;
+  font-size: 13px;
+  
+
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+.ca-img {
+  grid-area: text;
+}
+
+.ca-txt {
+  grid-area: text;
+  margin: 20px;
+  
+}
+.ca-txt .date {
+  color: rgb(255, 7, 110);
+  font-size:13px;
+}
+
+.ca-sts {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #131d38;
+}
+.ca-sts .stat {
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.ca-sts .border {
+  border-left: 1px solid #131d38;
+  border-right: 1px solid #131d38;
+  
+}
+.ca-sts .value{
+  font-size:22px;
+  font-weight: 500;
+}
+.ca-sts .value sup{
+  font-size:12px;
+}
+.ca-sts .type{
+  font-size:11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/*card2*/
+.ca-img.ca2 {
+  background: url("img2.jpg");
+  background-size: cover;
+}
+.ca-txt.ca2 .date {
+  color: rgb(255, 77, 7);
+}
+.ca-sts.ca2 .border {
+  border-left: 1px solid rgb(185, 67, 20);
+  border-right: 1px solid rgb(185, 67, 20);
+}
+.ca-sts.ca2 {
+  background: rgb(255, 77, 7);
+}
+/*card3*/
+.ca-img.ca3 {
+  background: url("img3.jpg");
+  background-size: cover;
+}
+.ca-txt.ca3 .date {
+  color: rgb(0, 189, 63);
+}
+.ca-sts.ca3 .border {
+  border-left: 1px solid rgb(14, 122, 50);
+  border-right: 1px solid rgb(14, 122, 50);
+}
+.ca-sts.ca3 {
+  background: rgb(0, 189, 63);
+}
+
+
+.ca-txt table tr td{
+  position:relative;
+  top:5px;
+  bottom: 5px;
+}
+.ca-txt table tr td .first{
+  float:left;
+  position:relative;
+  left:0px;
+  font-weight: bolder;
+}
+
+.second{
+
+  position:relative;
+  right: 20px;
+}
+
+
+/* .popover-content {
+  background-color: 131d38;
+  color: #FFFFFF;
+  padding: 25px;
+} */

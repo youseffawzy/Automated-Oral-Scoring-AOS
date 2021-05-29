@@ -1,0 +1,78 @@
+
+
+.ca {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 200px 200px 80px;
+  grid-template-areas: "text" "text" "stats";
+
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+  
+
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+.ca-img {
+  grid-area: text;
+
+}
+
+.ca-txt {
+  grid-area: text;
+  margin: 10px;
+}
+.ca-txt .date {
+  color: rgb(255, 7, 110);
+  font-size:13px;
+}
+.ca-txt p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+.ca-txt h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+.ca-sts {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(255, 7, 110);
+}
+.ca-sts .stat {
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.ca-sts .border {
+  border-left: 1px solid rgb(172, 26, 87);
+  border-right: 1px solid rgb(172, 26, 87);
+}
+.ca-sts .value{
+  font-size:22px;
+  font-weight: 500;
+}
+.ca-sts .value sup{
+  font-size:12px;
+}
+.ca-sts .type{
+  font-size:11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+ .ca:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+ 
